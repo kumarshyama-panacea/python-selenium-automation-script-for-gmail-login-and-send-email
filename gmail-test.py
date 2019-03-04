@@ -13,7 +13,7 @@ import time
 options = webdriver.ChromeOptions()
 options.add_argument("--start-maximized")
 
-# Driver Load
+# Driver Load & providing path of chromedriver where I have placed this
 browser = webdriver.Chrome(executable_path='/usr/bin/chromedriver',chrome_options=options)
 
 browser.get('http://gmail.com')
@@ -36,10 +36,11 @@ time.sleep(1)
 browser.execute_script("var ele=document.getElementsByClassName('vO')[0];  ele.innerHTML = 'shyam123.ckp@gmail.com';")
 time.sleep(1)
 
-
+# Email Subject
 subject = browser.find_element_by_name('subjectbox').send_keys('Test Email via selenium automation')
 time.sleep(1)
 
+# Email Content
 browser.execute_script("var ele2=document.getElementsByClassName('editable')[0];  ele2.innerHTML = 'my new content123';")
 time.sleep(1)
 

@@ -2,7 +2,7 @@
 This python based automation code is being wriiten with selenium packages that helps user to login gmail account and send email
 
 
-# Steps of Installation:
+# Setup Steps:
 1. First you need to install Python & Selenium
 E.g: Reference for Ubuntu: https://dzone.com/articles/python-getting-started
 
